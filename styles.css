@@ -1,0 +1,88 @@
+body {
+	font-family: Verdana;
+	background-image: url('bunny.jpg');
+	background-size: cover;
+}
+
+h1, .title {
+	font-family: 'Delius Unicase', cursive;
+}
+
+h1 {
+	color: #FFFD5B;
+	text-align: center;
+	font-size: 4em;
+	text-shadow:  1px 1px white;
+}
+
+.title {
+	font-size: 1.5em;
+	color: purple;
+}
+
+#container{
+	margin: auto;
+	width: 60%;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.listing {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding: 10px;
+	min-height: 200px;
+}
+
+.text{
+	width: 80%;
+	float: right;
+}
+
+img{
+	margin: 2%;
+	width: 15%;
+	vertical-align: middle;
+	float: left;
+}
+
+@media(max-width:970px) {
+	
+	.title {
+		font-size: 1em;
+	}
+	
+	.listing {
+		min-height: 150px;
+	}
+	
+	h1 {
+		font-size: 3em;
+	}
+}
+
+@media(max-width:675px) {
+	
+	.listing {
+		min-height: 200px;
+	}
+	
+	h1 {
+		font-size: 2em;
+	}
+	
+	img {
+		width: 25%;
+		float: none;
+	}
+	
+	.text {
+		float: none;
+		display: block;
+		margin: auto;
+	}
+	
+	#container {
+		text-align: center;
+	}
+}
+
